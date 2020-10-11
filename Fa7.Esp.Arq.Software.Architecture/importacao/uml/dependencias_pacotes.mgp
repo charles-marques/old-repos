@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="negocio.tarefa" x="312" y="230">
+        <DependencyLink destination="engine"/>
+        <DependencyLink destination="negocio.entidade"/>
+    </Package>
+    <Package name="negocio.entidade" x="304" y="309"/>
+    <Package name="engine.xml" x="468" y="230"/>
+    <Package name="engine" x="331" y="132">
+        <DependencyLink destination="engine.xml"/>
+    </Package>
+    <Package name="negocio.importclient" x="293" y="57">
+        <DependencyLink destination="engine"/>
+    </Package>
+</PackageAnalysis>

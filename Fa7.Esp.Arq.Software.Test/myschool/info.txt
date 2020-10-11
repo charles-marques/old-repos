@@ -1,0 +1,43 @@
+Especificação:
+WildFly 8.x
+Jdk 1.7
+CDI 1.0
+Dynamic Web Module 3.1
+JSF 2.2
+JAX-RS 1.1
+JPA 2.0
+
+Importação das Libs do JBehave via MVN:
+-------pom.xml-------
+    <dependency>
+      <groupId>org.jbehave</groupId>
+      <artifactId>jbehave-core</artifactId>
+      <version>4.0.4</version>
+    </dependency>
+---------------------
+
+Classes de teste:
+AulaSteps.java
+DisciplinaSteps.java
+JBehaveTest.java
+
+Arquivo de Estórias do JBehave:
+aula.story
+
+URL de teste do rest:
+http://localhost:8080/myschool/rest/disciplinas/1
+
+URL de serviços rest a serem testados:
+http://localhost:8080/myschool/rest/aulas/0
+http://localhost:8080/myschool/rest/aulas/1
+http://localhost:8080/myschool/rest/aulas/2
+http://localhost:8080/myschool/rest/aulas/3
+http://localhost:8080/myschool/rest/aulas/4
+http://localhost:8080/myschool/rest/aulas/5
+
+Pasta Web:
+/myschool/src/main/webapp
+
+Arquivo principal da aplicação:
+/myschool/src/main/webapp/views/index.html
+/myschool/src/main/webapp/views/index.xhtml

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processo nome="ImportacaoBananaArgentina">
+	<tarefas nome="validarProduto">
+		<tarefa classe="br.edu.fa7.importacao.validacao.ValidarCambio"/>
+		<tarefa classe="br.edu.fa7.importacao.validacao.ValidarEspecificacao"/>
+		<tarefa classe="br.edu.fa7.importacao.validacao.ValidarProduto"/>
+	</tarefas>
+</processo>

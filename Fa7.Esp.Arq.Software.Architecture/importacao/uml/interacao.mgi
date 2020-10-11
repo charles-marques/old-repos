@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="engine.Processo" x="302" y="109">
+        <Association destinationClassName="engine.TipoProcesso"
+            endpointName="tipoProcesso" kind="Simple"/>
+        <Association destinationClassName="engine.ContextoProcesso"
+            endpointName="contexto" kind="Simple"/>
+        <Communication destinationClassName="engine.xml.TagGrupoTarefas"/>
+        <Communication destinationClassName="engine.ContextoProcesso"/>
+        <Communication destinationClassName="engine.xml.LeitorProcessoXML"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.tarefa.ValidarCambio" x="510" y="225">
+        <Extension destinationClassName="engine.Tarefa"/>
+        <Communication destinationClassName="negocio.entidade.Cambio"/>
+        <Communication destinationClassName="engine.ContextoProcesso"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.tarefa.ValidarProduto" x="784" y="194">
+        <Extension destinationClassName="engine.Tarefa"/>
+        <Communication destinationClassName="engine.ContextoProcesso"/>
+        <Communication destinationClassName="negocio.entidade.Produto"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.importclient.Teste" x="307" y="285">
+        <Communication destinationClassName="engine.Tarefa"/>
+    </CommunicationClass>
+    <CommunicationClass name="engine.ContextoProcesso" x="501" y="109"/>
+    <CommunicationClass name="engine.Tarefa" x="520" y="285"/>
+    <CommunicationClass name="negocio.entidade.Produto" x="799" y="115"/>
+    <CommunicationClass name="engine.xml.TagProcesso" x="46" y="204">
+        <Association destinationClassName="engine.xml.TagGrupoTarefas"
+            endpointName="gruposTarefas" kind="Simple"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.tarefa.ContextoImex" x="500" y="59">
+        <Extension destinationClassName="engine.ChaveContexto"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.tarefa.ProcessoImex" x="298" y="59">
+        <Extension destinationClassName="engine.TipoProcesso"/>
+    </CommunicationClass>
+    <CommunicationClass name="negocio.entidade.Cambio" x="731" y="266"/>
+    <CommunicationClass name="engine.ChaveContexto" x="502" y="13"/>
+    <CommunicationClass name="engine.xml.TagGrupoTarefas" x="47" y="34">
+        <Association destinationClassName="engine.xml.TagTarefa"
+            endpointName="tarefas" kind="Simple"/>
+    </CommunicationClass>
+    <CommunicationClass name="engine.TipoProcesso" x="298" y="13"/>
+    <CommunicationClass name="engine.xml.LeitorProcessoXML" x="41" y="150"/>
+    <CommunicationClass name="negocio.tarefa.ValidarEspecificacao"
+        x="765" y="17">
+        <Extension destinationClassName="engine.Tarefa"/>
+        <Communication destinationClassName="engine.ContextoProcesso"/>
+        <Communication destinationClassName="negocio.entidade.Produto"/>
+    </CommunicationClass>
+    <CommunicationClass name="engine.xml.TagTarefa" x="46" y="251"/>
+</ClassDiagram>

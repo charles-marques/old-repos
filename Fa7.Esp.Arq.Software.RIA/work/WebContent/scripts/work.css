@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+
+/**
+ * Arquivo de estilo para projeto
+ */
+div.list {
+	background-color: silver;
+	border-color: black;
+	border-width: 2em;
+	table-layout: auto;
+}
+
+div.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.kind-info {
+	flex: 1 1 33%;
+	flex-wrap: wrap;
+	line-height: 6em;
+	min-width: 5em;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Verdana;
+	padding: 1em;
+	border: 1px solid #EEE;
+	cursor: pointer;
+	color: #ABD; /* A53B3D */
+	background-color: #FFF;
+}
+
+div.tags {
+	flex: 1 1 33%;
+	flex-wrap: wrap;
+	line-height: 6em;
+	min-width: 5em;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Verdana;
+	padding: 1em;
+	border: 1px solid #EEE;
+	cursor: pointer;
+	color: #ABD; /* A53B3D */
+	background-color: #FFF;
+}
